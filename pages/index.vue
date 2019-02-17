@@ -4,10 +4,10 @@
       <h1>Get the latest tech news</h1>
     </section>
     <section class="featured-posts">
-      <nuxt-link :to="'/posts' + 1">
-        <article class="post-preview">
-          <div class="post-thumbnail">
-            <img src="https://placekitten.com/408/287" alt="kitten">
+      <nuxt-link :to="'/posts' + 2" class="post-preview">
+        <article>
+          <div class="post-thumbnail"
+               style="background-image: url('https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg')">
           </div>
           <div class="post-content">
             <h1>Post Title</h1>
@@ -15,10 +15,10 @@
           </div>
         </article>
       </nuxt-link>
-      <nuxt-link :to="'/posts' + 2">
-        <article class="post-preview">
-          <div class="post-thumbnail">
-            <img src="https://placekitten.com/408/287" alt="kitten">
+      <nuxt-link :to="'/posts' + 2" class="post-preview">
+        <article>
+          <div class="post-thumbnail"
+               style="background-image: url('https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg')">
           </div>
           <div class="post-content">
             <h1>Post Title 2</h1>
