@@ -1,19 +1,43 @@
 <template>
-    <nuxt-link :to="'/posts' + 2" class="post-preview">
+    <nuxt-link :to="'/posts' + id" class="post-preview">
         <article>
           <div class="post-thumbnail"
-               style="background-image: url('https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg')">
+               :style="{backgroundImage: url('thumbnail')}">
           </div>
           <div class="post-content">
-            <h1>Post Title</h1>
-            <p>Preview Text</p>
+            <h1>{{ title }}</h1>
+            <p>{{ previewText }}</p>
           </div>
         </article>
     </nuxt-link>
 </template>
 
-<style scoped>
+<script>
+export default {
+    name: 'PostPreview',
+    props: {
+        id: {
+            type: String,
+            required: true
+        },
+        title: {
+            type: String,
+            required: true
+        },
+        previewText: {
+            type: String,
+            required: true
+        },
+        thumbnail: {
+            type: String,
+            required: true
+        }
+    }
+}
+</script>
 
+
+<style scoped>
 .featured-posts {
   display: flex;
   padding: 20px;

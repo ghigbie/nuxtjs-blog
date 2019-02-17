@@ -3,18 +3,32 @@
     <section class="intro">
       <h1>Get the latest tech news</h1>
     </section>
-    <PostPreview />
-    <PostPreview />
-    <PostPreview />
+    <PostPreview :id="'1'"
+                 :title="'Post One'"
+                 :previewText="dummyText"
+                 :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
+    <PostPreview :id="'2'"
+                 :title="'Post One'"
+                 :previewText="dummyText"
+                 :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
+    <PostPreview :id="'3'"
+                 :title="'Post One'"
+                 :previewText="dummyText"
+                 :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
   </div>
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostPreview from '@/components/Posts/PostsPreview.vue';
 
 export default {
   components: {
     PostPreview
+  },
+  data(){
+      return {
+        dummyText: 'Lorem ipsum dolor sit amet more bacon for me!'
+      }
   }
 }
 </script>
@@ -51,48 +65,4 @@ export default {
   }
 }
 
-.featured-posts {
-  display: flex;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.post-preview {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px #ccc;
-  background-color: white;
-  width: 90%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@media (min-width: 850px) {
-  .post-preview {
-    width: 400px;
-    margin: 10px;
-  }
-}
-
-.post-thumbnail {
-  width: 100%;
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-}
-
-.post-content {
-  padding: 10px;
-  text-align: center;
-}
-
-a:hover .post-content,
-a:active .post-content {
-  background-color: #ccc;
-}
 </style>
