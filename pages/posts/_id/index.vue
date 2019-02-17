@@ -1,7 +1,7 @@
 <template>
     <div class="single-post-page">
         <section class="post">
-            <h1 class="post-title">{{ this.title }}</h1>
+            <h1 class="post-title">{{ this.title }} with ID: {{ $route.params.id }}</h1>
             <div class="post-details">
                 <div class="last-updated">{{ this.date }}</div>
                 <div class="author">{{ this.author }}</div>
