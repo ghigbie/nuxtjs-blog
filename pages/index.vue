@@ -6,7 +6,9 @@
     <section class="featured-posts">
       <nuxt-link :to="'/posts' + 1">
         <article class="post-preview">
-          <div class="post-thumbnail"></div>
+          <div class="post-thumbnail">
+            <img src="https://placekitten.com/408/287" alt="kitten">
+          </div>
           <div class="post-content">
             <h1>Post Title</h1>
             <p>Preview Text</p>
@@ -15,7 +17,9 @@
       </nuxt-link>
       <nuxt-link :to="'/posts' + 2">
         <article class="post-preview">
-          <div class="post-thumbnail"></div>
+          <div class="post-thumbnail">
+            <img src="https://placekitten.com/408/287" alt="kitten">
+          </div>
           <div class="post-content">
             <h1>Post Title 2</h1>
             <p>Preview Text 2</p>
