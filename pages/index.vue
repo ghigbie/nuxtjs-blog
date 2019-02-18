@@ -8,11 +8,11 @@
                  :previewText="dummyText"
                  :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
     <PostPreview :id="'2'"
-                 :title="'Post One'"
+                 :title="'Post Two'"
                  :previewText="dummyText"
                  :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
     <PostPreview :id="'3'"
-                 :title="'Post One'"
+                 :title="'Post Three'"
                  :previewText="dummyText"
                  :thumbnail="'https://www.topuniversities.com/sites/default/files/articles/lead-images/mit_vs_caltech.jpg'" />
   </div>
@@ -40,7 +40,7 @@ export default {
   position: relative;
   padding: 30px;
   box-sizing: border-box;
-  background-image: '~assets/images/main-page-background.jpg';
+  background-image: url('~assets/images/main-page-background.jpg');
   background-position: center;
   background-size: cover;
 }

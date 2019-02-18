@@ -9,13 +9,16 @@
                  class="sidenav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <nuxt-link to="/">Blog</nuxt-link>
+                        <nuxt-link to="/posts"
+                                   @click="$emit('close')">Blog</nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <nuxt-link to="/about">About<nuxt-link>
+                        <nuxt-link to="/about"
+                                   @click="$emit('close')">About</nuxt-link>
                     </li>
                     <li class="nav-item">
-                        <nuxt-link to="/admin">Admin</nuxt-link>
+                        <nuxt-link to="/admin"
+                                   @click="$emit('close')">Admin</nuxt-link>
                     </li>
                 </ul>
             </div>
